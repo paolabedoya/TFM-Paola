@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="Definitions_12wfjya" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="4.6.0">
+  <decision id="Decision_0j3ut4r" name="datos">
+    <decisionTable id="DecisionTable_0ufffxh">
+      <input id="Input_1" label="entrada">
+        <inputExpression id="InputExpression_1" typeRef="integer">
+          <text></text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" label="salida" typeRef="integer" />
+      <rule id="DecisionRule_167msab">
+        <inputEntry id="UnaryTests_0qmik42">
+          <text>&gt; 5</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1jt6spe">
+          <text>1</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1vqcg7f">
+        <inputEntry id="UnaryTests_1q6bgdd">
+          <text>&gt; 10</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1i4z1l8">
+          <text>2</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1rt19nl">
+        <inputEntry id="UnaryTests_1eibw83">
+          <text>&gt; 20</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1nup722">
+          <text>3</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="Decision_0j3ut4r">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
